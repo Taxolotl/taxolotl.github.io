@@ -1,3 +1,35 @@
-a {
-  color: black;
+.bar {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  position: static;
+  float: left;
+  white-space: normal;
+  width: 100%;
+  overflow: hidden;
+  display: inline-block;
+  width: auto;
+}
+.bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0;
+  width: 100%;
+  text-align: left;
+  white-space: normal;
+}
+.tl {
+ float: left !important;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
 }
