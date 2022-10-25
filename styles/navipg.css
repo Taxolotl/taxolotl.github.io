@@ -30,7 +30,7 @@
   background-image: url("/images/Avatar-movie-poster-avatar-38807326-800-1185.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
