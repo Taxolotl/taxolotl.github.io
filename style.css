@@ -1,3 +1,7 @@
 body {
   background-color: light-green;
 }
+@font-face {
+  font-family: Voynichese;
+  src: url("/fonts/voynich.ttf");
+}
