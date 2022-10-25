@@ -1,0 +1,7 @@
+@font-family {
+  font-family: Voynichese;
+  src: url(/fonts/voynich.ttf);
+}
+.Voy {
+ font-family: Voynichese; 
+}
