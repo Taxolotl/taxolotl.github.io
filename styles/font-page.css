@@ -40,11 +40,61 @@
 
 @font-face {
   font-family: NoMu;
-  src url(/fonts/NotoMusic-Regular.ttf);
+  src: url(/fonts/NotoMusic-Regular.ttf);
 }
 .NoMu {
   font-family: NoMu;
 }
+
+@font-face {
+  font-family: MQ;
+  src: url(/fonts/Musiqwik-zRl1.ttf);
+}
+.MQ {
+  font-family: MQ;
+}
+
+@font-face {
+  font-family: MC;
+  src: url(/fonts/MatrixCodeNfi-YPPj.otf);
+}
+.MC {
+  font-family: MC;
+}
+
+@font-face {
+  font-family: Las;
+  src: url(/font/Lassus-7BRA.ttf);
+}
+.Las {
+  font-family: Las;
+}
+
+@font-face {
+  font-family: Fsan;
+  src: url(/font/FreeSans.otf);
+}
+.Fsan {
+  font-family: Fsan;
+}
+
+@font-face {
+  font-family: dim;
+  src: url(/font/Dimurphic-Gl6Z.ttf);
+}
+.Dim {
+  font-family: dim;
+}
+
+@font-face {
+  font-family: Ast;
+  src: url(/font/Aster-FONTSMAGAZINE.COM.otf);
+}
+.Ast {
+  font-family: Ast;
+}
+
+
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
