@@ -37,6 +37,14 @@
 .Qua {
   font-family: Quantum;
 }
+
+@font-face {
+  font-family: NoMu;
+  src url(/fonts/NotoMusic-Regular.ttf);
+}
+.NoMu {
+  font-family: NoMu;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
