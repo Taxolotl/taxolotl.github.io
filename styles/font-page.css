@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: Las;
-  src: url(/font/Lassus-7BRA.ttf);
+  src: url(/fonts/Lassus-7BRA.ttf);
 }
 .Las {
   font-family: Las;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: Fsan;
-  src: url(/font/FreeSans.otf);
+  src: url(/fonts/FreeSans.otf);
 }
 .Fsan {
   font-family: Fsan;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: dim;
-  src: url(/font/Dimurphic-Gl6Z.ttf);
+  src: url(/fonts/Dimurphic-Gl6Z.ttf);
 }
 .Dim {
   font-family: dim;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: Ast;
-  src: url(/font/Aster-FONTSMAGAZINE.COM.otf);
+  src: url(/fonts/Aster-FONTSMAGAZINE.COM.otf);
 }
 .Ast {
   font-family: Ast;
