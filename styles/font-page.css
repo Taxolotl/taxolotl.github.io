@@ -5,6 +5,38 @@
 .Voy {
  font-family: Voynichese; 
 }
+
+@font-dace {
+  font-family: pix-wing;
+  src: url(/fonts/pixelated-wingdings.ttf);
+}
+.pWix {
+  font-family: pix-wing;
+}
+
+@font-face {
+  font-family: Verdana;
+  src: url(/fonts/Verdana.ttf);
+}
+.Ver {
+  font-family: Verdana;
+}
+
+@font-face {
+  font-family: TimesNewRoman;
+  src: url(/fonts/TimesTenLTStd-Roman.otf);
+}
+.TNR {
+  font-family: TimesNewRoman;
+}
+
+@font-face {
+  font-family: Quantum;
+  src: url(/fonts/Quantum-eZOXg.ttf);
+}
+.Qua {
+  font-family: Quantum;
+}
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #333;
