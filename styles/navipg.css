@@ -43,7 +43,7 @@
   background-image: url("/images/4d59dc553d17c682f904bb93fa9c9706--alien-queen-navi.jpg");
 
   /* Set a specific height */
-  min-height: 500px;
+  height: 100%;
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
