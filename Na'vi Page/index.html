@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <link rel="stylesheet" href="/styles/topnav.css">
-	<link rel="stylesheet" href="/Na'vi Page/style.css">
-  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-  <body>
-    <div class="topnav">
-      <a  href="https://taxolotl.github.io">Home</a>
-      <a href="https://github.com/Taxolotl/taxolotl.github.io">Github</a>
-      <a class="active" href="https://taxolotl.github.io/Na'vi Page">Na'vi page</a>
-    </div>
-    <div class="parallax"></div>
-    <div style="color:black;background-color:white">Welcome to my Na'vi page.</div>
-    <div class="parallax2"></div>
-    <p>Who is excited for Avatar: The Way of Water?</p>
-  </body>
+	<head>
+		<link rel="stylesheet" href="/Na'vi Page/style.css">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script>
+			$(function(){
+      				$("#includedContent").load("inchtmls/topnav.html", function(){
+					document.getElementById("Navi").classList.add("active")
+				}); 
+    			});
+		</script>
+	</head>
+	<body>
+		<div class="includedContent"></div>
+		<div class="parallax"></div>
+		<div style="color:black;background-color:white">Welcome to my Na'vi page.</div>
+		<div class="parallax2"></div>
+		<p>Who is excited for Avatar: The Way of Water?</p>
+	</body>
 </html>
