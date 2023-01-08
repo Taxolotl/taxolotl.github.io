@@ -6,14 +6,16 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
 		<script>
 			$(function(){
-      				$("#includedContent").load("inchtmls/topnav.html", function(){
+      				$("#topnav").load("inchtmls/topnav.html", function(){
 					document.getElementById("Home").classList.add("active")
 				}); 
+				$("#media").load("inchtmls/media.html");
     			});
 		</script>
 	</head>
 	<body>
-		<div id="includedContent"></div>
+		<div id="topnav"></div>
+		<div id="media"></div>
 		<p>Welcome to my personal website, have fun!</p>
 	</body>
 </html>
