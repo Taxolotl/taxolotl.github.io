@@ -2,7 +2,7 @@
 .topnav {
   background-color: white;
   overflow: hidden;
-  border-color: blue;
+  border: thin solid blue;
   border-radius: 4px;
 }
 
