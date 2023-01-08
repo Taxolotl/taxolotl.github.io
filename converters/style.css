@@ -77,7 +77,7 @@ input {
 
 .accordion:hover {
   background-color: #000099;
-  color: black;
+  color: white;
 }
 .active {
   background-color: #000055;
