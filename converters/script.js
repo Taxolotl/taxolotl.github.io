@@ -210,185 +210,353 @@ function run() {
     if (fro == "celsius") {
         if (to == "kelvin") {
             document.getElementById("out").value = celsiusToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = °C + 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = celsiusToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = °C \\cdot \\frac{9}{5} + 32", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = celsiusToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = °C \\cdot \\frac{9}{5} + 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = celsiusToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (100-°C) \\cdot \\frac{3}{2}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = celsiusToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = °C \\cdot 0.33", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = celsiusToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = °C \\cdot 0.8", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = celsiusToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = °C \\cdot \\frac{21}{40} + 7.5", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "kelvin") {
         if (to == "celsius") {
             document.getElementById("out").value = kelvinToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = °K - 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = kelvinToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = (°K - 273.5) \\cdot \\frac{9}{5} + 32", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
-        if (to == "rankine") {
+      if (to == "rankine") {
             document.getElementById("out").value = kelvinToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = °K \\cdot 1.8", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
-        if (to == "delisle") {
+      if (to == "delisle") {
             document.getElementById("out").value = kelvinToDelisle(parseInt(document.getElementById("inp").value));
-        }
+            katex.render("°D = (373.15 - °K) \\cdot \\frac{3}{2})", document.getElementById("formula"), {
+              throwOnError:false
+            });
+      }
         if (to == "newton") {
             document.getElementById("out").value = kelvinToNewton(parseInt(document.getElementById("inp").value));
+          katex.render("°N = (°K-273.15) \\cdot \\frac{33}{100})", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = kelvinToReaumur(parseInt(document.getElementById("inp").value));
+          katex.render("°R = (°K-273.15) \\cdot 0.8)", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = kelvinToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = (°K-273.15) \\cdot 0.525 + 7.5)", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "fahrenheit") {
         if (to == "kelvin") {
             document.getElementById("out").value = fahrenheitToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = (°F-32) \\cdot \\frac{5}{9} + 273.15", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = fahrenheitToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = (°F-32) \\cdot frac{5}{9}", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = fahrenheitToRankine(parseInt(document.getElementById("inp").value));
+          katex.render("°Ra = °F + 459.67", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = fahrenheitToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (212-°F) \\cdot \\frac{5}{6})", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = fahrenheitToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = (°F-32) \\cdot frac{11}{6}", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = fahrenheitToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = (°F-32) \\cdot \\frac{5}{9}", document.getElementById("formula"), {
+               throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = fahrenheitToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = (°F-32) \\cdot frac{7}{24} + 7.5", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "rankine") {
         if (to == "kelvin") {
             document.getElementById("out").value = rankineToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = °Ra \\cdot \\frac{5}{9}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = rankineToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = (°Ra - 491.67) \\cdot \\frac{5}{9}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = rankineToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = °Ra - 459.67", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = rankineToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (671.67 - °Ra) \\cdot \\frac{5}{6} ", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = rankineToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = (°Ra - 491.67) \\cdot \\frac{11}{60}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = rankineToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = (°Ra - 491.67) \\cdot \\frac{4}{9}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = rankineToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = (°Ra - 491.67) \\cdot \\frac{7}{24} + 7.5", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "delisle") {
         if (to == "kelvin") {
             document.getElementById("out").value = delisleToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = 373.15 - °D \\cdot \\frac{2}{3}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = delisleToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = 100 - °D \\cdot \\frac{2}{3}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = delisleToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = 212 - °D \\cdot \\frac{6}{5}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = delisleToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = 671.67 - °D \\cdot \\frac{6}{5}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = delisleToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = 33 - °D \\cdot \\frac{11}{50}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = delisleToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = 80 - °D \\cdot \\frac{8}{15}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = delisleToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = 60 - °D \\cdot \\frac{7}{20}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "newton") {
         if (to == "kelvin") {
             document.getElementById("out").value = newtonToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = °N \\cdot \\frac{100}{33} + 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = newtonToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = °N \\cdot \\frac{100}{33}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
-            document.getElementById("out").value = newtonToFahrenheit(parseInt(document.getElementById("inp").value));
+            document.getElementById("out").value = newtonToFahrenheit(parseInt(document.getElementById("inp").value));  
+            katex.render("°F = °N \\cdot \\frac{60}{11}+ 32", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = newtonToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = °N \\cdot \\frac{60}{11} + 491.67", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = newtonToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (33 - °N) \\cdot \\frac{50}{11}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = newtonToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = °N \\cdot \\frac{80}{33}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = newtonToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = °N \\cdot \\frac{35}{22} + 7.5", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
     if (fro == "reaumur") {
         if (to == "kelvin") {
             document.getElementById("out").value = reaumurToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = °R \\cdot \\frac{5}{4} + 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = reaumurToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = °R \\cdot \\frac{5}{4}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = reaumurToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = °R \\cdot \\frac{9}{4} + 32", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = reaumurToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = °R \\cdot \\frac{9}{4} + 491.67", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = reaumurToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (80 - °R) \\cdot \\frac{15}{8}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = reaumurToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = °R \\cdot \\frac{33}{80}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "romer") {
             document.getElementById("out").value = reaumurToRomer(parseInt(document.getElementById("inp").value));
+            katex.render("°Rø = °R \\cdot \\frac{21}{32} + 7.5", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
-    if (fro == "romer") {
+  if (fro == "romer") {
         if (to == "kelvin") {
             document.getElementById("out").value = romerToKelvin(parseInt(document.getElementById("inp").value));
+            katex.render("°K = (°Rø - 7.5) \\cdot \\frac{40}{21} - 273.15", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "celsius") {
             document.getElementById("out").value = romerToCelsius(parseInt(document.getElementById("inp").value));
+            katex.render("°C = (°Rø - 7.5) \\cdot \\frac{40}{21}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "fahrenheit") {
             document.getElementById("out").value = romerToFahrenheit(parseInt(document.getElementById("inp").value));
+            katex.render("°F = (°Rø - 7.5) \\cdot \\frac{24}{7} + 32", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "rankine") {
             document.getElementById("out").value = romerToRankine(parseInt(document.getElementById("inp").value));
+            katex.render("°Ra = (°Rø - 7.5) \\cdot \\frac{24}{7} - 491.67", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "delisle") {
             document.getElementById("out").value = romerToDelisle(parseInt(document.getElementById("inp").value));
+            katex.render("°D = (60 - °Rø) \\cdot \\frac{20}{7}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "newton") {
             document.getElementById("out").value = romerToNewton(parseInt(document.getElementById("inp").value));
+            katex.render("°N = (°Rø - 7.5) \\cdot \\frac{22}{35}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
         if (to == "reaumur") {
             document.getElementById("out").value = romerToReaumur(parseInt(document.getElementById("inp").value));
+            katex.render("°R = (°Rø - 7.5) \\cdot \\frac{32}{21}", document.getElementById("formula"), {
+              throwOnError:false
+            });
         }
     }
 }
@@ -418,7 +586,7 @@ function kelvinToCelsius(input) {
     return input - 273.15;
 }
 function kelvinToFahrenheit(input) {
-    return input * (9 / 5) + 32;
+    return (input-273.15) * (9 / 5) + 32;
 }
 function kelvinToRankine(input) {
     return input * 1.8;
@@ -560,32 +728,4 @@ function romerToNewton(input) {
 }
 function romerToReaumur(input) {
     return (input - 7.5) * (32 / 21);
-}
-
-
-
-
-
-var acc = document.getElementsByClassName("accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-      if (panel.style.maxHeight) {
-          panel.style.maxHeight = null;
-      } else {
-          panel.style.maxHeight = panel.scrollHeight + "px";
-      }
-  });
 }
